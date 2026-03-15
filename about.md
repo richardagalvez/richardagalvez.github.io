@@ -3,55 +3,58 @@ layout: page
 title: About
 permalink: /about/
 ---
-<img align="right" hspace="50px" src="https://raw.githubusercontent.com/richardagalvez/richardagalvez.github.io/master/meeeee.jpg" style="width: 250px;"/>My name is Richard Galvez and I am currently a Fisk-Vanderbilt Bridge Postdoctoral Fellow at Vanderbilt and Fisk University. I live to understand what comprises particle dark matter and how machine learning algorithms learn.
 
-Generally, my research lies on the boundary between astrophysics/cosmology and data science, in which fields I often delve a bit deeper. I believe the potential of machine/deep learning algorithms applied to large-scale cosmological and astrophysical surveys is limitless. We’re living in a  time when the developments of machine intelligence research are ready to meet the magnitude of data coming from modern astrophysical surveys. It’s a great time to be a scientist.
+<img src="/meeeee.jpg" alt="Richard Galvez" class="about-photo" style="float: right; margin: 0 0 1.5rem 2rem; width: 200px; border-radius: 50%;">
 
+I'm Richard Galvez — an AI/ML researcher and systems architect with a Ph.D. in Physics. I currently serve as **Director of Applied AI at Pure Storage**, where I research petabyte-scale storage systems for frontier AI training and inference pipelines, and as **AI/ML Research Faculty Lead at NASA's Frontier Development Lab**, where I've led teams building live data pipelines for foundation model training from NASA's Solar Dynamics Observatory.
 
-My past research focused primarily on computational and mathematical physics/fluid dynamics, though I’ve conducted research on non-linear fluids, supersymmetric quantum field theory, lattice field theory, the large N expansion of quantum field theories, cosmological inflation and super string theory.
-If you’re interested in the technical details of this work, please check out my publications on [the Arxiv](http://inspirehep.net/search?ln=en&p=find+a+galvez%2C+richard&of=hb&action_search=Search&sf=earliestdate&so=d).
+My career has taken me from theoretical physics and supersymmetric quantum field theory to the frontiers of applied AI — through postdocs at NYU and Vanderbilt, leading AI research at robotics and health-tech startups, founding a company (DataTalk AI, acquired by Percipio Health), and now working on the infrastructure that powers large-scale AI systems.
 
+My research interests span **AI safety and alignment**, **scaling laws**, **neural network theory**, **statistical mechanics approaches to neural networks**, **distributed training at scale**, and **performance benchmarking**.
 
-Beyond that, I enjoy asking new questions and communicating my current understanding. I also enjoy learning about subjects I am unfamiliar with and always welcome new challenges. I believe that a scientist should investigate whatever problem she or he deems interesting without regard to the norms in their field. I truly dislike the notion that one is “wasting their time” if not working on a scientific paper directly related to their previous work. I don’t believe the mind works that way and think we should not limit our creativity.
+## Select Publications
 
-I have drawn, on countless occasion, inspiration from seemingly unrelated topics. For example, I’ve recently been learning about topological data analysis, which draws from my study of string theory, differential geometry and data science / machine learning. You can read a review on the subject by Michael Lesnick (a mathematical biologist at the Institute for Advanced Study) [here](https://www.ias.edu/ideas/2013/lesnick-topological-data-analysis).
+**Machine Learning & AI Systems**
 
-The questions I am typically drawn to relate to science, economics, as well as sports statistics. You can find a menagerie of random questions I’m trying to answer by checking out [my GitHub](http://www.github.com/richardagalvez). I also try to keep a (somewhat descriptive) account of what I’m up to through jupyter notebooks in various repositories (which I’m a big fan of) and a research blog which I update on regular occasion (mostly seems like more philosophical thoughts rather than actual research :) ). My blog can be found on this site.
+- R. Galvez, et al., "El Caliente: An AI Workload Storage Benchmark for Distributed System Performance," *in prep* (2026).
+- R. Galvez, et al., "A Machine Learning Dataset Prepared From the NASA Solar Dynamics Observatory Mission," *ApJ Supplements* (2019).
+- A. Szenicer, R. Galvez, et al., "A Deep Learning Virtual Instrument for Monitoring Extreme UV Solar Spectral Irradiance," *Science Advances* (2019).
+- M. Indaco, R. Galvez, et al., "Virtual EVE: a Deep Learning Model for Solar Irradiance Prediction," *NeurIPS ML & Physical Sciences Workshop* (2023).
+- M. Cranmer, R. Galvez, et al., "Modeling the Gaia Color-Magnitude Diagram with Bayesian Neural Flows," *Astrophysical Journal Letters* (2020).
+- N. Hinkel, R. Galvez, et al., "A Recommendation Algorithm to Predict Exoplanet Host Stars," *Nature Astronomy* (2018).
 
+**Physics & High Performance Computing**
 
-# Guiding Philosophies
+- R. Galvez, R. J. Scherrer, "Cosmology with Independently Varying Neutrino Temperature," *Phys. Rev. D* (2016).
+- R. Galvez, "Kahler Moduli Inflation in Type IIB Compactifications," *Phys. Rev. D* 94, 103521 (2016).
+- S. Catterall, R. Galvez, et al., "Phase Structure of Lattice N=4 Super Yang-Mills," *JHEP* (2012).
+- R. Galvez, G. van Anders, "Accelerating Shifted Linear Systems with CUDA," arXiv:1102.2143 (2011).
 
-I am guided in my daily life by a short list of principles:
+Full publication list available on [arXiv](http://inspirehep.net/search?ln=en&p=find+a+galvez%2C+richard&of=hb&action_search=Search&sf=earliestdate&so=d).
 
-- Racism, discrimination and oppression have no place in the modern world.
+## Highlights
 
-All people, regardless of position, age, sex, origin, sexual orientation or any other factor should be treated with the respect and dignity they deserve for their unique talents, abilities and/or knowledge.
-Of course, this is unfortunately  not the case today. A lot of my daily effort  is directed toward the fight for equality. Regardless of my future career path, I plan to continue this fight and am always looking for allies.
+- **TedX Speaker** — ["What is Dark Matter, Anyway?"](https://youtu.be/A_EKQrKYyrM) (2016)
+- **Harvard Society of Fellows** nominee (2015–2017)
+- **Visiting Researcher at CERN**, Geneva — CMS experiment (2007)
+- **NSF EAPSI Fellow** — University of Auckland, New Zealand (2013)
+- **40+ national & international research presentations**
+- **Languages**: Spanish (native), French & Italian (intermediate)
 
-- Open Science.
+## Guiding Philosophies
 
-Open Science concerns itself with the transparent sharing of knowledge and findings. Sharing of ideas openly only helps the body of science and knowledge advance faster and I try to be as transparent as possible.
+**Racism, discrimination, and oppression have no place in the modern world.** All people, regardless of position, age, sex, origin, sexual orientation, or any other factor should be treated with the respect and dignity they deserve. Much of my daily effort is directed toward the fight for equality.
 
-I also aim to upload material that accompanies my scientific papers explaining the computational code, full derivation of formulae and/or data generated / analyzed in a Github repo. I think this is especially helpful for beginners. I have so far only done this with my most recent paper, but intend on creating repos for my previous papers also.
+**Open Science.** Sharing ideas openly accelerates the advancement of knowledge. I aim to share code, derivations, and data alongside publications — especially to help those just starting out.
 
-- Access to quality knowledge and educational resources will lead to a better world.
+**Access to quality education leads to a better world.** If more people have access to quality educational resources and scientifically valid information, the world becomes a safer and more progressive place.
 
-I also believe the world will be a much safer and progressive place if more people have access to quality educational resources and scientifically valid information. Let those, whoever they are, or where ever they may be, have access to the resources necessary to answer the questions that drive their curiosity. 
+**In mentorship, industry is not failure.** I strongly dislike the academic sentiment that students entering industry are "failures." If I mentored a student who was hired by a top company, I would be exceptionally proud. This mindset is not only short-sighted but damaging to science.
 
-This is why I am a huge fan of Google’s Project Loon. From their website:
+**Communicate your work.** Scientists and engineers should share their work with the public as often as possible — to inspire new generations and to ultimately advance the questions of the day.
 
-“More than half of the world’s population is still without Internet access. Project Loon is a network of balloons traveling on the edge of space, designed to extend Internet connectivity to people in rural and remote areas worldwide.”
-
-- In mentorship, I will never see a student entering industry as a failure.
-
-I strongly dislike the sentiment in academia (specifically STEM fields) that students or postdocs moving to industry are seen as a failure. I believe this notion is extremely short sighted and damaging, not only to the exceptional student, but to science as a whole. If I mentored a student who was hired by Apple, Google, or Amazon, I would be exceptionally proud and would love to keep contact with this brilliant person.
-
-- Scientists and Engineers should share their work with the public as often as possible.
-
-Communication of one’s work is key to inspire new generations and in ultimately resolving questions of the day. For this reason I try to explain my work, to as large an audience as possible. I’m happy to have the opportunity to give a Ted talk on dark matter November 13, 2016 for this reason. I’ll be placing a link here when done!
-
-That’s about it! I try to let these principles guide my actions and hopefully they speak for themselves.
+---
 
 I also like to get pictures of myself doing handstands around the world:
 
-<img align="center" hspace="50px" src="https://raw.githubusercontent.com/richardagalvez/richardagalvez.github.io/master/IMG_4510.JPG" style="width: 300px;"/>
+<img src="/images/handstand.jpg" alt="Handstand" style="max-width: 350px; border-radius: 8px; margin: 1rem 0;" loading="lazy">
