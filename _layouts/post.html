@@ -3,16 +3,32 @@ layout: default
 ---
 
 <article class="post">
-  <h1>{{ page.title }}</h1>
+  <div class="container">
+    <div class="post-header">
+      <h1>{{ page.title }}</h1>
+      <div class="post-meta">
+        <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%B %e, %Y" }}</time>
+        <span>&middot;</span>
+        {% assign words = content | number_of_words %}
+        {% assign minutes = words | divided_by: 200 %}
+        {% if minutes < 1 %}{% assign minutes = 1 %}{% endif %}
+        <span>{{ minutes }} min read</span>
+      </div>
+    </div>
 
-  <div class="entry">
-    {{ content }}
+    <div class="post-content entry">
+      {{ content }}
+    </div>
+
+    <nav class="post-nav">
+      {% if page.previous.url %}
+      <a href="{{ site.baseurl }}{{ page.previous.url }}" class="post-nav-prev">&larr; {{ page.previous.title }}</a>
+      {% endif %}
+      {% if page.next.url %}
+      <a href="{{ site.baseurl }}{{ page.next.url }}" class="post-nav-next">{{ page.next.title }} &rarr;</a>
+      {% endif %}
+    </nav>
   </div>
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
-  {% include disqus.html %}
   {% include mathjax.html %}
 </article>

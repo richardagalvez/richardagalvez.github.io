@@ -1,61 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-    (adsbygoogle = window.adsbygoogle || []).push({
-      google_ad_client: "ca-pub-5893480520555042",
-      enable_page_level_ads: true
-    });
-    </script>
-    
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
 
     {% include meta.html %}
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="icon" href="{{ site.baseurl }}/favicon.ico" />
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+    <a href="#main-content" class="skip-link">Skip to content</a>
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="{{ site.baseurl }}/" class="site-title">{{ site.name }}</a>
+
+        <div class="nav-right">
+          <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-hidden="true">
+
+          <div class="nav-links">
+            <a href="{{ site.baseurl }}/about">About</a>
+            <a href="{{ site.baseurl }}/#posts">Blog</a>
+            <a href="{{ site.baseurl }}/contact">Contact</a>
+            <a href="{{ site.baseurl }}/Galvez_resume.pdf">CV</a>
           </div>
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-	    <a href="{{ site.baseurl }}/contact">Contact</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-	    <a href="{{ site.baseurl }}/rgalvez_cv.pdf">CV</a>
-          </nav>
-        </header>
-      </div>
-    </div>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/></svg>
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path stroke-linecap="round" d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          </button>
 
-    <div id="main" role="main" class="container">
+          <label for="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
       {{ content }}
-    </div>
+    </main>
 
-    <div class="wrapper-footer">
+    <footer class="site-footer">
       <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
+        {% include svg-icons.html %}
+        <p class="footer-text">&copy; {{ site.time | date: '%Y' }} {{ site.name }}</p>
       </div>
-    </div>
+    </footer>
 
     {% include analytics.html %}
+
+    <script>
+      // Dark mode toggle
+      (function() {
+        const toggle = document.getElementById('theme-toggle');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const stored = localStorage.getItem('theme');
+
+        if (stored) {
+          document.documentElement.setAttribute('data-theme', stored);
+        } else if (prefersDark) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+
+        toggle.addEventListener('click', function() {
+          const current = document.documentElement.getAttribute('data-theme');
+          const next = current === 'dark' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', next);
+          localStorage.setItem('theme', next);
+        });
+      })();
+    </script>
   </body>
 </html>
